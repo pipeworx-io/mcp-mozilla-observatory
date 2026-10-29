@@ -1,12 +1,20 @@
 {
   "name": "@pipeworx/mcp-mozilla-observatory",
-  "version": "0.1.2",
+  "version": "0.2.0",
   "description": "MDN HTTP Observatory — grade any website's HTTP security headers and get the specific fixes, from Mozilla's public scanner.",
   "type": "module",
-  "main": "src/index.ts",
-  "types": "src/index.ts",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./tools.json": "./tools.json",
+    "./package.json": "./package.json"
+  },
   "bin": {
     "mcp-mozilla-observatory": "bin/cli.js"
+  },
+  "files": ["bin/", "lib/", "tools.json", "server.json"],
+  "engines": {
+    "node": ">=18"
   },
   "keywords": ["mcp", "mcp-server", "model-context-protocol", "pipeworx", "mozilla-observatory"],
   "license": "MIT",
@@ -14,19 +22,12 @@
     "type": "git",
     "url": "git+https://github.com/pipeworx-io/mcp-mozilla-observatory.git"
   },
-  "scripts": {
-    "typecheck": "tsc --noEmit"
-  },
-  "dependencies": {
-    "@modelcontextprotocol/sdk": "^1.30.0",
-    "tsx": "^4.19.0"
-  },
-  "devDependencies": {
-    "typescript": "^5.9.3",
-    "@cloudflare/workers-types": "^4.20260405.1"
-  },
+  "mcpName": "io.github.pipeworx-io/mozilla-observatory",
   "pipeworx": {
-    "sourceHash": "v1-f5d3fe16de54ad5e14f659d5fafd7fe2a70ba55636b3ca450fc92cd801cf48e1",
-    "sourceCommit": "774de7f685a75e02d0b828d24a7b94794102152c"
+    "mode": "gateway",
+    "slug": "mozilla-observatory",
+    "gatewaySlug": "mozilla-observatory",
+    "sourceHash": "v1-4c8d58557dbab06dc6dc756a87f56534b21ebe46e496732ac6426b402d206ba2",
+    "sourceCommit": "5c89d6abb778d45da5d92002eb251978622bedf9"
   }
 }

@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-mozilla-observatory",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "MDN HTTP Observatory — grade any website's HTTP security headers and get the specific fixes, from Mozilla's public scanner.",
   "type": "module",
   "main": "lib/index.js",
@@ -27,7 +27,7 @@
     "mode": "gateway",
     "slug": "mozilla-observatory",
     "gatewaySlug": "mozilla-observatory",
-    "sourceHash": "v1-4c8d58557dbab06dc6dc756a87f56534b21ebe46e496732ac6426b402d206ba2",
-    "sourceCommit": "5c89d6abb778d45da5d92002eb251978622bedf9"
+    "sourceHash": "v1-1eecb82b234061f00072d0b5dfb900858ae6f679d83b5bb9c69cd023f99fe741",
+    "sourceCommit": "56cf550e46fed96c0101a3877ccaf8357eecf016"
   }
 }
